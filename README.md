@@ -15,10 +15,11 @@ Installation Instructions:
 3) After configuring the website, browse to the URL to see home page of the sample.
 4) Active Directory Sample application configuration is driven by a adfsconf.php located in the <InstallationBaseDir>\Conf\Php (Eg: In above example case c:\www\Adfsweb\conf\adfsconf.php) .
  
- The following parameters should be configured 
-   a) Adfs Endpoint URL - Endpoint URL of ADFS service.
-   b) Realm/spIdentifier - Realm configured in ADFS Relying party configuration.
-   c) Encryption certificate and password - Path to the certificate file and password.
+The following parameters should be configured 
+ a) Adfs Endpoint URL - Endpoint URL of ADFS service.
+ b) Realm/spIdentifier - Realm configured in ADFS Relying party configuration.
+ c) Encryption certificate and password - Path to the certificate file and password.
+
 
 A sample configuration file without certificate contifgured is shown below
 
