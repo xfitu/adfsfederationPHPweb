@@ -1,6 +1,20 @@
 # adfsfederationPHPweb
 Claims-aware PHP web application which using WS-Federation to communicate with ADFS 3.0 server (Windows Server 2012 R2) for user authentication, Single Sign On, and Single Log Out.This application can be deployed into Apache webserver.The core functionalities of the application are; users can make self-registration or create account in Active Directory via web interface and connect to Active Directory Federation Server (ADFS) configured and authenticate with Active Directory Account. On successful authentication the Application will receive Claims(username,name,and role) from the ADFS Server and decides which pages can be accessed by each user based user's role in the claims(two different roles:doctor or patient).This application uses Java Servlet API(https://github.com/xfitu/WebAPI) which make LDAPS connection with Active Directory(AD DS) server and uses WS-Federation library(https://github.com/schakra/Active-Directory-Sample-for-PHP-Developers) to connect with Active Directory Federation Services (AD FS) server.
  
+ 
+ INSTALLATION
+------------
+Prerequisites:
+ 1) PHP 5.2 enabled or above with OpenSSL.
+ 2) Web Server (IIS/Apache etc. which has enabled running PHP applications)
+ 3) Access to an ADFS 2.0 server that can have Relying party trust configured for this site.
+
+Installation Instructions:
+1) Download and unzip Active Directory sample to a local directory (Eg: c:\www\AdfsSample)
+2) Configure a website pointing to the above local directory (Eg: https://localhost/Adfsweb/, where localhost is the domain on which the site is configured). Webserver should be configured with to default index page “index.php” for this site.
+3) After configuring the website, browse to the URL to see home page of the sample.
+4) Active Directory Sample application configuration is driven by a adfsconf.php located in the <InstallationBaseDir>\Conf\Php (Eg: In above example case c:\www\Adfsweb\conf\adfsconf.php) .
+ 
 The following parameters should be configured 
  a) Adfs Endpoint URL - Endpoint URL of ADFS service.
  b) Realm/spIdentifier - Realm configured in ADFS Relying party configuration.
