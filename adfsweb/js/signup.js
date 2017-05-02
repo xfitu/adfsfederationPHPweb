@@ -1,4 +1,6 @@
-/* javascript or Jquery file for signup.php page
+/*
+ * Send AJAX request to Java Servlet WebAPI( Reference: https://github.com/xfitu/WebAPI)
+ * javascript or Jquery file for signup.php page
  * This JQUERY file contains jquery functions
  * which will send request to the API server 
  * in order to register new user to Active Directory and
@@ -35,8 +37,7 @@ $(document).ready(function() {
             //meaning we are expecting JSON data in response from the server
             $.ajax({
                 type: "POST",
-               // url: "https://192.168.255.11:7443/ActiveDirectoryWebAPI/AddUser",
-				url: "https://localhost:7443/WebAPI/AddUser",
+                url: "https://localhost:7443/WebAPI/AddUser",
                 data: dataString,
                 dataType: "json",
                 //if received a response from the server
@@ -117,8 +118,7 @@ function SendEmail(fname,lname,email){
   dataString ="subject="+subject+"&body="+body+"&link="+verificationlink+ "&fname=" + fname+"&lname="+lname+"&receiveremail="+email;
      $.ajax({
             type: "POST",
-            //url: "https://192.168.255.11:7443/ActiveDirectoryWebAPI/SendEmail",
-			url: "https://localhost:7443/WebAPI/SendEmail",
+            url: "https://localhost:7443/WebAPI/SendEmail",
             data: dataString,
             dataType: "json", 
             success: function( result) {
