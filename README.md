@@ -17,8 +17,11 @@ Installation Instructions:
  
 The following parameters should be configured:
 ==============================================
+ 
  a) Adfs Endpoint URL - Endpoint URL of ADFS service.
+ 
  b) Realm/spIdentifier - Realm configured in ADFS Relying party configuration.
+ 
  c) Encryption certificate and password - Path to the certificate file and password.
 
 
