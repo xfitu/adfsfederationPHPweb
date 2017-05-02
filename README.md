@@ -16,7 +16,6 @@ Installation Instructions:
 4) Active Directory Sample application configuration is driven by a adfsconf.php located in the <InstallationBaseDir>\Conf\Php (Eg: In above example case c:\www\Adfsweb\conf\adfsconf.php) .
  
 The following parameters should be configured:
-==============================================
  
  a) Adfs Endpoint URL - Endpoint URL of ADFS service.
  
