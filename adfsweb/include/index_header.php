@@ -85,9 +85,10 @@
         
       <li><a href="index.php"><span class="glyphicon glyphicon-home" ></span></a></li>
       <li><a id="profilesettingsicon" href="profile.php"><span class="fa fa-cog" ></span></a></li>
-	  <li><a id="profilesettingsicon" href="signup.php"><span class="glyphicon glyphicon-user" ></span>register</a></li>	
+      <li><a id="profilesettingsicon" href="signup.php"><span class="glyphicon glyphicon-user" ></span>register</a></li> 
+      <li><a id="forgetpassword" href="forgetpassword.php"><span></span>forgetpassword</a></li>	      
       
-	  </ul>
+       </ul>
       <ul class="nav navbar-nav navbar-right">
 	    
         <li><a href="#"><span id="usernameonicon" class="glyphicon glyphicon-user" >
