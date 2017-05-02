@@ -20,20 +20,20 @@ ADFS 3.0 CONFIGURATION (On Windows Server 2012 R2)
 1) Open the ADFS 3.0 Manager
 2) Right click Relying Party Trust and select Add Relying Party Trust
 3) Start the Wizard:
-    a. Select Data Source: Select Manual Configuration
-    b. Specify Display Name: Enter an identity for your Drupal site (same as
+a. Select Data Source: Select Manual Configuration
+b. Specify Display Name: Enter an identity for your Drupal site (same as
        6.b under Installation)
-    c. Choose Profile: Select SAML 2.0
-    d. Configure Certificate: Only set this if you want Encrypted responses (as
+c. Choose Profile: Select SAML 2.0
+d. Configure Certificate: Only set this if you want Encrypted responses (as
        in 6.d under Installation)
-    e. Configure URL: Select WS-Federation Passive and enter the path to the
+e. Configure URL: Select WS-Federation Passive and enter the path to the
        Active Directory Sample entry point: <https://localhost/adfsweb>/authhandler.php
-    f. Configure Identifier: Add the identity form 6.b under Installation
-    g. Choose Issuance Authorization Rules: This setting is determined by the
+f. Configure Identifier: Add the identity form 6.b under Installation
+g. Choose Issuance Authorization Rules: This setting is determined by the
        system administrator, use Permit All to allow any user access to the
        Drupal site, otherwise configure access individually
-    h. Ready to Add Trust: Close the Wizard and continue with Claims
-    i. Configure Claims:  This may vary based on configuration and determines
+h. Ready to Add Trust: Close the Wizard and continue with Claims
+i. Configure Claims:  This may vary based on configuration and determines
        the values for 6.e under Installation.
         - A sample configuration with mandatory claim "Name ID" is as below
              - Use LDAP Attributes
