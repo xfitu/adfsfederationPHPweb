@@ -7,7 +7,7 @@ Claims-aware PHP web application which uses WS-Federation protocol to communicat
 Prerequisites:
  1) PHP 5.2 enabled or above with OpenSSL.
  2) Web Server (IIS/Apache etc. which has enabled running PHP applications)
- 3) Access to an ADFS 2.0 server that can have Relying party trust configured for this site.
+ 3) Access to an ADFS 3.0 server that can have Relying party trust configured for this site.
 
 Installation Instructions:
 1) Download and unzip Active Directory sample to a local directory (Eg: c:\www\AdfsSample)
