@@ -27,7 +27,7 @@ ADFS 3.0 CONFIGURATION (On Windows Server 2012 R2)
     d. Configure Certificate: Only set this if you want Encrypted responses (as
        in 6.d under Installation)
     e. Configure URL: Select WS-Federation Passive and enter the path to the
-       Active Directory Sample entry point: <Active-Directory-Site-URL>/authhandler.php
+       Active Directory Sample entry point: <https://localhost/adfsweb>/authhandler.php
     f. Configure Identifier: Add the identity form 6.b under Installation
     g. Choose Issuance Authorization Rules: This setting is determined by the
        system administrator, use Permit All to allow any user access to the
