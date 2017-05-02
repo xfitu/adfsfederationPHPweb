@@ -108,9 +108,10 @@ patient Page is the page for the user whose role is patient. patient Page is imp
 signup Page:
 signup Page is the page for the new user to create account in Active Directory. signup Page is implemented in signup.php file in the adfsweb application.
 
+forgetpassword Page:
+signup Page is the page for the new user who forgets his/her account password. forgetpassword Page is implemented in forgetpassword.php file in the adfsweb application.
+
 profile Page:
 profile Page is the page for the user to update and delete his/her detail attributes in Active Directory. profile Page is implemented in profile.php,profile_header.php and authform.php files in the adfsweb application.
 
-forgetpassword Page:
-signup Page is the page for the new user who forgets his/her account password. forgetpassword Page is implemented in forgetpassword.php file in the adfsweb application.
 
