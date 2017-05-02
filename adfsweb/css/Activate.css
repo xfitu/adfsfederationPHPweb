@@ -1,0 +1,17 @@
+/*
+This css fila is used in Activate.jsp page
+*/
+
+.jumbotron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+    
+

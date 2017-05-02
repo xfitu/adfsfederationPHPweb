@@ -1,0 +1,10 @@
+/* This css file used in index.jsp file*/
+ body{
+  background-color: white;
+} 
+.jumbotron{
+  margin-bottom: 0px;
+}
+.navbar{
+margin-bottom: 0px;  
+}

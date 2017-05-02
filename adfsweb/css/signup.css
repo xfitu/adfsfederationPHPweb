@@ -1,0 +1,30 @@
+/*css file for signup.jsp page*/
+.profile-img{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.text-center login-title{
+ margin-bottom:10px;
+
+}
+  .well{
+   margin-top:10px;
+}
+
+.input-group-addon{
+background-color:#000000;
+color:white;
+}
+
+input[type=text],input[type=password],input[type=email],#role {
+    border: 1px solid #555;
+	
+    
+}
+
+
