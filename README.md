@@ -78,7 +78,7 @@ USAGE
 2) Click on login button on index page
 3) You will be redirected to ADFS server login page
 3) Enter valid Active directory user credentials and click signin
-4) ADFS server will redirect to Active Directory adfsweb application with security token(ST) 
+4) ADFS server will redirect to Active Directory adfsweb application with security token(ST) which contains claims about the        	    authenticated user 
 
 
 IMPLEMENTATION DETAILS
