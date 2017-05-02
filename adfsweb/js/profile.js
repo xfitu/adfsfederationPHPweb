@@ -1,4 +1,6 @@
-/* This jquery file is used to send ajax data to profile.php on the server*/
+/*
+ * Send AJAX request to Java Servlet WebAPI( Reference: https://github.com/xfitu/WebAPI)
+ *This jquery file is used to send ajax data to profile.php on the server*/
 /* this jquery functions for updating user profile*/
 /*IMPORTANT NOTE: everything must be inside document.ready function */
 $(document).ready(function(){
