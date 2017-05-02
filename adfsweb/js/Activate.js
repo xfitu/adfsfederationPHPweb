@@ -1,4 +1,5 @@
 /*
+ * Send AJAX request to Java Servlet WebAPI( Reference: https://github.com/xfitu/WebAPI)
  * This jquery or javascript file is used in Activate.php page
  */
 $(document).ready(function() {  
