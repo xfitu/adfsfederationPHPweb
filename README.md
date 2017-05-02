@@ -72,3 +72,45 @@ ADFS 3.0 CONFIGURATION (On Windows Server 2012 R2)
              - Send Group Membership(two different groups: doctor or patient)as claims  Outgoing: role
 
 
+USAGE
+-----
+1) Open Browser navigate to ADFS sample (Eg: In our case https://localhost/Adfsweb/) index page will be displayed.
+2) Click on login button on index page
+3) You will be redirected to ADFS server login page
+3) Enter valid Active directory user credentials and click signin
+4) ADFS server will redirect to Active Directory adfsweb application with security token(ST) 
+
+
+IMPLEMENTATION DETAILS
+----------------------
+Implementation of ADFS PHP web application is divided into 7 different parts which are as follows
+ 1) ADFS Bridge
+ 2) index Page 
+ 3) doctor Page
+ 4) patient page
+ 5) signup Page
+ 6) forgepassword Page
+ 7) profile Page
+Each of the these are described below
+
+ADFS Bridge:
+ADFS Bridge implements method for WS-Federation passive redirection to ADFS server for authentication and method to processing the incoming response from ADFS server to process the claims. ADFS Bridge is implemented in the file adfsbridge.php.  ADFS Bridge is driven by the configuration adfsconf.php. ADFS Server makes a callback to authhandler.php, Authhandler.php uses ADFS  Bridge method to process the claims and then store them in session. 
+
+index Page:
+index Page is the initial home page for this website. It has a login button which implements on click behavior to redirect to the configured ADFS Server for authentication. index Page uses ADFS Bridge method to redirect to ADFS Server for sign in. index Page is implemented in index.php,index_header.php and authform.php files in the adfsweb application. The index Page receives security token after user successfully sign in and makes redirection based on the value of role claim( either doctor or patient).
+
+doctor Page:
+doctor Page is the page for the user whose role is doctor. doctor Page is implemented in doctor.php,doctor_header.php and authform.php files in the adfsweb application.
+
+patient Page:
+patient Page is the page for the user whose role is patient. patient Page is implemented in patient.php,patient_header.php and authform.php files in the adfsweb application.
+
+signup Page:
+signup Page is the page for the new user to create account in Active Directory. signup Page is implemented in signup.php file in the adfsweb application.
+
+profile Page:
+profile Page is the page for the user to update and delete his/her detail attributes in Active Directory. profile Page is implemented in profile.php,profile_header.php and authform.php files in the adfsweb application.
+
+forgetpassword Page:
+signup Page is the page for the new user who forgets his/her account password. forgetpassword Page is implemented in forgetpassword.php file in the adfsweb application.
+
