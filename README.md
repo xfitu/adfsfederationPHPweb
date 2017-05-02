@@ -20,10 +20,10 @@ ADFS 3.0 CONFIGURATION (On Windows Server 2012 R2)
 1) Open the ADFS 3.0 Manager
 2) Right click Relying Party Trust and select Add Relying Party Trust
 3) Start the Wizard:
-a. Select Data Source: Select Manual Configuration
-b. Specify Display Name: Enter an identity for your Drupal site (same as
-       6.b under Installation)
-c. Choose Profile: Select SAML 2.0
+        a. Select Data Source: Select Manual Configuration
+        b. Specify Display Name: Enter an identity for your Drupal site (same as
+           6.b under Installation)
+        c. Choose Profile: Select SAML 2.0
 d. Configure Certificate: Only set this if you want Encrypted responses (as
        in 6.d under Installation)
 e. Configure URL: Select WS-Federation Passive and enter the path to the
